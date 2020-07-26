@@ -4,7 +4,12 @@
       <div class="row">
         <div class="col-xs-12 col-md-12">
           <h1>Quotes New App</h1>
-          <app-quotes></app-quotes>
+          <app-quote >
+            <h1>HI BRO</h1>
+            <p>An Amazing Quote!</p>
+          </app-quote>
+          <hr />
+         
         </div>
       </div>
     </div>
@@ -12,13 +17,17 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Quote from "./components/Quote.vue";
 export default {
+  
   components: {
-    "app-quotes": Quote,
+    "app-quote": Quote,
   },
 };
 </script>
 
-<style></style>
+<style>
+body {
+  background-image: linear-gradient(to left, #fffefe, #0494b8);
+}
+</style>
